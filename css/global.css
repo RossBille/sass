@@ -1,0 +1,120 @@
+/*
+* Skeleton-SASS V1.0
+* Copyright 2012 by Michael Lazer-Walker
+* https://github.com/lazerwalker/Skeleton-Sass
+*
+* Based off of Skeleton v1.1:
+* https://github.com/dhgamache/Skeleton
+*
+* Free to use under the MIT license.
+* http://www.opensource.org/licenses/mit-license.php
+*/
+/* #Variable Definitions
+================================================== */
+/* Grid
+================================================== */
+/* #Clearing
+================================================== */
+/* Include clearfix on parent to clear nested columns,
+or wrap each row of columns in a @include row */
+/* You can also use a @include clear to clear columns */
+/* line 8, ../sass/global.scss */
+body {
+  background-color: blue;
+}
+
+/* line 11, ../sass/global.scss */
+.container {
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 960px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  background-color: white;
+  height: 500px;
+}
+/* line 37, ../sass/_skeleton.scss */
+.container:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 11, ../sass/global.scss */
+  .container {
+    width: 768px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 11, ../sass/global.scss */
+  .container {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 11, ../sass/global.scss */
+  .container {
+    width: 420px;
+  }
+}
+/* line 17, ../sass/global.scss */
+.container div {
+  height: 50px;
+  border-color: black;
+  border-width: 2px;
+  border-style: solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+/* line 2, ../sass/_alpha-omega.scss */
+.container div {
+  float: left;
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 172px;
+}
+@media only screen and (max-width: 767px) {
+  /* line 2, ../sass/_alpha-omega.scss */
+  .container div {
+    margin: 0;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  /* line 2, ../sass/_alpha-omega.scss */
+  .container div {
+    width: 133.6px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* line 2, ../sass/_alpha-omega.scss */
+  .container div {
+    width: 300px;
+  }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+  /* line 2, ../sass/_alpha-omega.scss */
+  .container div {
+    width: 420px;
+  }
+}
+/* line 5, ../sass/_alpha-omega.scss */
+.container div:nth-child(5n+5) {
+  margin-right: 0;
+}
+/* line 8, ../sass/_alpha-omega.scss */
+.container div:nth-child(5n+1) {
+  margin-left: 0;
+}

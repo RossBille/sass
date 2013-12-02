@@ -1,0 +1,11 @@
+@mixin alpha-omega($selector,$columns:2, $max-columns:16){
+	#{$selector}{
+		@include columns($max-columns / $columns);
+	}	
+	#{$selector}:nth-child(#{$columns}n+#{$columns}){
+		@include omega;		
+	}
+	#{$selector}:nth-child(#{$columns}n+1){
+		@include alpha;		
+	}
+}

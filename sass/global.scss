@@ -1,0 +1,24 @@
+@import "skeleton";
+@import "alpha-omega";
+@import "border";
+
+$background:blue;
+$content-background:white;
+
+body{
+	background-color: $background;
+}
+.container{
+	@include container;
+	@include border;	
+	@include border-radius;
+	background-color:$content-background;
+	height:500px;
+	div{
+		//@include columns(3);
+		height:50px;
+		@include border;
+		@include border-radius;
+	}
+	@include alpha-omega(div,5);
+}
