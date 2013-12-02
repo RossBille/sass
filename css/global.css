@@ -29,9 +29,6 @@ body {
   margin: 0 auto;
   padding: 0;
   width: 960px;
-  border-color: black;
-  border-width: 2px;
-  border-style: solid;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
@@ -69,14 +66,20 @@ body {
 /* line 17, ../sass/global.scss */
 .container div {
   height: 50px;
-  border-color: black;
-  border-width: 2px;
-  border-style: solid;
+  background: pink;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
+}
+/* line 2, ../sass/_first-and-last.scss */
+.container div:nth-child(5n+5) {
+  background-color: green;
+}
+/* line 5, ../sass/_first-and-last.scss */
+.container div:nth-child(5n+1) {
+  background-color: green;
 }
 /* line 2, ../sass/_alpha-omega.scss */
 .container div {

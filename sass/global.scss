@@ -1,7 +1,7 @@
 @import "skeleton";
 @import "alpha-omega";
 @import "border";
-
+@import "first-and-last";
 $background:blue;
 $content-background:white;
 
@@ -10,15 +10,19 @@ body{
 }
 .container{
 	@include container;
-	@include border;	
+	//@include border;	
 	@include border-radius;
 	background-color:$content-background;
 	height:500px;
 	div{
-		//@include columns(3);
 		height:50px;
-		@include border;
+		background:pink;
+		//@include border;
 		@include border-radius;
+		
+	}
+	@include first-and-last-in-row(div,5){
+		background-color:green;
 	}
 	@include alpha-omega(div,5);
 }
