@@ -72,52 +72,41 @@ body {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   border-radius: 10px;
-}
-/* line 2, ../sass/_first-and-last.scss */
-.container div:nth-child(5n+5) {
-  background-color: green;
-}
-/* line 5, ../sass/_first-and-last.scss */
-.container div:nth-child(5n+1) {
-  background-color: green;
-}
-/* line 2, ../sass/_alpha-omega.scss */
-.container div {
   float: left;
   display: inline;
   margin-left: 10px;
   margin-right: 10px;
-  width: 172px;
+  width: 220px;
 }
 @media only screen and (max-width: 767px) {
-  /* line 2, ../sass/_alpha-omega.scss */
+  /* line 17, ../sass/global.scss */
   .container div {
     margin: 0;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 959px) {
-  /* line 2, ../sass/_alpha-omega.scss */
+  /* line 17, ../sass/global.scss */
   .container div {
-    width: 133.6px;
+    width: 172px;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 2, ../sass/_alpha-omega.scss */
+  /* line 17, ../sass/global.scss */
   .container div {
     width: 300px;
   }
 }
 @media only screen and (min-width: 480px) and (max-width: 767px) {
-  /* line 2, ../sass/_alpha-omega.scss */
+  /* line 17, ../sass/global.scss */
   .container div {
     width: 420px;
   }
 }
-/* line 5, ../sass/_alpha-omega.scss */
-.container div:nth-child(5n+5) {
-  margin-right: 0;
+/* line 2, ../sass/_first-and-last.scss */
+.container div:nth-child(4n+4) {
+  background-color: green;
 }
-/* line 8, ../sass/_alpha-omega.scss */
-.container div:nth-child(5n+1) {
-  margin-left: 0;
+/* line 5, ../sass/_first-and-last.scss */
+.container div:nth-child(4n+1) {
+  background-color: green;
 }

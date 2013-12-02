@@ -17,12 +17,11 @@ body{
 	div{
 		height:50px;
 		background:pink;
-		//@include border;
 		@include border-radius;
-		
+		@include columns(4);		
 	}
-	@include first-and-last-in-row(div,5){
+	@include first-and-last-in-row(div,4){
 		background-color:green;
 	}
-	@include alpha-omega(div,5);
+	//@include alpha-omega(div,5);
 }
