@@ -1,4 +1,4 @@
-@mixin first-and-last-in-row($selector,$columns:2, $max-columns:16){	
+@mixin first-and-last-in-row($selector,$columns:2){	
 	#{$selector}:nth-child(#{$columns}n+#{$columns}){
 		@content;		
 	}
@@ -6,12 +6,12 @@
 		@content;
 	}
 }
-@mixin first-in-row($selector,$columns:2, $max-columns:16){	
+@mixin first-in-row($selector,$columns:2){	
 	#{$selector}:nth-child(#{$columns}n+#{$columns}){
 		@content;		
 	}
 }
-@mixin last-in-row($selector,$columns:2, $max-columns:16){	
+@mixin last-in-row($selector,$columns:2){	
 	#{$selector}:nth-child(#{$columns}n+1){
 		@content;
 	}
