@@ -2,7 +2,9 @@
 @import "alpha-omega";
 @import "border";
 @import "first-and-last";
-$background:blue;
+@import "respond-to";
+@import "nav-bar";
+$background:lightblue;
 $content-background:white;
 
 body{

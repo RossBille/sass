@@ -1,0 +1,21 @@
+@import "skeleton";
+@import "alpha-omega";
+@import "border";
+@import "first-and-last";
+@import "respond-to";
+@import "nav-bar";
+$background:lightblue;
+$content-background:white;
+
+body{
+	background-color: $background;
+}
+#container{
+	@include container;
+	//background-color:$content-background;
+	@include border-radius(10px);
+	@include respond-to(tablet){
+		height:1000px;
+	}
+}
+

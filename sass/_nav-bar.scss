@@ -1,0 +1,26 @@
+#nav-bar{
+	//general
+	background-color:grey;
+	div{
+		background-color:white;	
+	}
+	//landscape
+	@include columns(3);
+	div{
+		@include columns(3);	
+		margin-left:0px;
+		margin-top:5px;
+		margin-bottom:5px;
+	}
+	//portrait
+	@include respond-to(tablet){
+		@include columns($num-columns);
+		@include alpha-omega(div,5);//make all children div form into a 5 column grid
+		div{	
+			@include border-radius(10px);
+			margin-top:5px;
+			margin-bottom:5px;
+			text-align:center;
+		}
+	}
+}
