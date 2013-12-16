@@ -1,0 +1,9 @@
+@mixin popup($width:50%){
+	position:fixed;
+    left: (100% - $width) /2;
+    top:25%;
+    width:$width;
+    z-index:1000;
+    @content;
+    
+}
