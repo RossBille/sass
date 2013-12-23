@@ -1,0 +1,12 @@
+@import "compass/css3"
+
+@mixin highlight($bg:$nav-background){
+	@include background-image(
+		linear-gradient(
+			color-stops(
+				lighten($bg, 10), 
+				darken($bg, 10)
+			)
+		)
+	);
+}
